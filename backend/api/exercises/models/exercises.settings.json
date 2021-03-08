@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exercises",
+  "info": {
+    "name": "Exercises"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "weight",
+        "reps"
+      ]
+    }
+  }
+}

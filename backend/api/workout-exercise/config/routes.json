@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/workout-exercises",
+      "handler": "workout-exercise.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/workout-exercises/count",
+      "handler": "workout-exercise.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/workout-exercises/:id",
+      "handler": "workout-exercise.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/workout-exercises",
+      "handler": "workout-exercise.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/workout-exercises/:id",
+      "handler": "workout-exercise.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/workout-exercises/:id",
+      "handler": "workout-exercise.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

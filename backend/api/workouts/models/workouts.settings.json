@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workouts",
+  "info": {
+    "name": "Workouts",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "program": {
+      "model": "programs"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_exercises",
+  "info": {
+    "name": "UserExercise",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "exercise": {
+      "model": "exercises"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "reps": {
+      "type": "integer"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "workout": {
+      "model": "workouts"
+    }
+  }
+}

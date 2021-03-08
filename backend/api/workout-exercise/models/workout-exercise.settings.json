@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workout_exercises",
+  "info": {
+    "name": "WorkoutExercise"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "exercise": {
+      "model": "exercises"
+    },
+    "workout": {
+      "model": "workouts"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

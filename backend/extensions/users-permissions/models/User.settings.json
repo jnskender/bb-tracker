@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "users-permissions_user",
+  "collectionName": "users",
   "info": {
     "name": "user",
     "description": ""

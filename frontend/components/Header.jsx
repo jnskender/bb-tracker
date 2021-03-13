@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from "next/link"
-import { useSession } from "next-auth/client"
+import { useSession, signIn } from "next-auth/client"
 
 export default function Header() {
   const [session, loading] = useSession()
@@ -18,7 +18,16 @@ export default function Header() {
           }
           {!session &&
             <li>
-              <Link href="/api/auth/signin">Signin</Link>
+              <Link href="/api/auth/signin">
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    signIn();
+                  }}
+                >
+                  Sign In
+            </button>
+              </Link>
             </li>
           }
         </ul>

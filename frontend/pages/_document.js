@@ -15,7 +15,9 @@ export default class myDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <meta name="google-site-verification" content="22wSFzayyeeerBqNdptL7T7PV_boOxlc8dpaoUS9MOQ" />
+        </Head>
         <body>
           <Main />
           <NextScript />

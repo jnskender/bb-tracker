@@ -4,6 +4,7 @@ import { useSession, signIn } from "next-auth/client"
 
 export default function Header() {
   const [session, loading] = useSession()
+  console.log(session)
   return (
     <div>
       <nav>

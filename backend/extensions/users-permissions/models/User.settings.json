@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "users",
+  "collectionName": "strapi-users",
   "info": {
     "name": "user",
     "description": ""
